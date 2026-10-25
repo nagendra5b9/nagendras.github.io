@@ -1,46 +1,31 @@
-# Nagendra Portfolio
+# Nagendra Portfolio V6 — Prism Glass
 
-A responsive personal portfolio website built with **HTML, CSS, and JavaScript**.
+A responsive Java Full Stack Developer portfolio with a colourful glassmorphism design. The default theme is deep midnight glass with aqua, orchid, and rose highlights; a warm, airy frosted-glass light theme is available using the theme toggle.
 
-## Files
-
-- `index.html` — page structure and portfolio content
-- `style.css` — complete responsive design
-- `script.js` — navigation, theme switch, animations, counters, and form validation
-- `resume.pdf` — add your latest resume using this exact filename
-
-## Before publishing
-
-Open `index.html` and replace these placeholders:
-
-1. `your.email@example.com`
-2. `+91 00000 00000`
-3. LinkedIn URL
-4. GitHub URL
-5. Project repository and demo links
-
-Search for the word `Replace` or `placeholder` inside `index.html` to find them quickly.
+## Features
+- Frosted-glass cards with translucency, backdrop blur, luminous edges, and soft colour blooms
+- Iridescent gradient headings and aqua/lilac/rose accent palette
+- Profile image, GitHub and LinkedIn links, LeetCode profile card
+- Automatic public repository discovery through the GitHub API
+- Project search, filters, sort/view controls, and interactive project detail dialogs
+- Live GitHub profile signals and graceful fallbacks
+- Keyboard command palette (Ctrl/⌘ + K), quick project search (`/`), mobile navigation
+- Responsive layout, reduced-motion support, theme persistence
+- Contact form that opens a prepared email draft; it does not send or save messages itself
 
 ## Run locally
+1. Extract the ZIP.
+2. Open this folder in Visual Studio Code.
+3. Start `index.html` with Live Server, or serve the folder with any static web server.
+4. Keep an internet connection enabled for GitHub statistics, Google Fonts, Font Awesome, and the third-party LeetCode card.
 
-You can double-click `index.html`, but using a local server is better.
+## Publish on GitHub Pages
+Copy the folder contents into the root of `nagendra5b9/nagendras.github.io` (after backing up the existing repository), commit, and push to the branch configured in Settings → Pages. The existing resume is linked from the existing raw GitHub file URL.
 
-### VS Code Live Server
+## Theme architecture
+- `style.css`: layout and component base styles
+- `glass-theme.css`: V6 color system and frosted-glass overrides
+- `script.js`: interactive behaviour and GitHub repository loading
+- `assets/favicon.svg`: Prism Glass favicon
 
-1. Open the folder in VS Code.
-2. Install the **Live Server** extension.
-3. Right-click `index.html`.
-4. Select **Open with Live Server**.
-
-## Contact form
-
-The form currently validates user input in the browser. To receive real messages,
-connect it to Formspree, EmailJS, Web3Forms, or a custom backend API.
-
-## Deployment options
-
-You can host the website free using:
-
-- GitHub Pages
-- Netlify
-- Vercel
+The project library automatically shows new public repositories after refresh. It cannot show private repositories through this public site, and the website has not been pushed or deployed by this package creation.
